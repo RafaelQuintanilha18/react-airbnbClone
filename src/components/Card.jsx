@@ -1,4 +1,6 @@
 import React from "react"
+import star from "/public/images/star.png"
+// import cardimg from "/public/images/"
 
 export default function Card(props) {
     let badgeText
@@ -19,7 +21,7 @@ export default function Card(props) {
                 className="card--image"
             />
             <div className="card--stats">
-                <img src="/public/images/star.png" className="card--star" />
+                <img src={star} className="card--star" />
                 <span className="rating">{props.stats.rating}</span>
                 <span className="gray">({props.stats.reviewCount}) • </span>
                 <span className="gray">{props.location}</span>
